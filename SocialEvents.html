@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+<head>
+    <meta charset="utf=8">
+    <title>Questionnare 1</title>
+    <style>
+div.header
+{
+    background-color: lightblue;
+    text-align: center;
+    font-size: 300%;
+}
+div.questionnare1
+{
+    background-color: grey;
+    display:table;
+    padding: 5px;
+    border: 1px solid blue;    
+  font-size: 200%;
+  margin: 0 auto;
+  border-;
+  
+}
+input[type='checkbox']
+{
+    -ms-transform: scale(2); 
+  -moz-transform: scale(2); 
+  -webkit-transform: scale(2); 
+  -o-transform: scale(2);
+  transform: scale(2);
+  padding: 10px;
+}
+.checkboxtext
+{
+    font-size:110%;
+    display: inline;
+}
+div.Next
+{
+    border-bottom-style: outset;
+            text-align:center;
+            position: relative;
+            width: 300px;
+            height: 78px;
+            left: 800px;
+            top: 100px;
+            background-color: green;
+           font-size: 400%;
+}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>Have you been to any of these places? (check all applies): </h2>
+
+    </div>
+    <div class=questionnare1>
+    <!--creating questionnares need JS to setup database-->
+    <form action="/action_page.php">
+            <input type="checkbox" id="Activity1" name="Activity1" value="store">
+            <label for="Activity1"><span class="checkboxtext">grocery store</span></label><br> <!-- br means break line-->
+
+            <input type="checkbox" id="place2" name="place2" value="beach">
+            <label for="place2"><span class="checkboxtext"> beach</span></label><br> <!-- br means break line-->
+            
+            <input type="checkbox" id="place3" name="place3" value="movie theatre">
+            <label for="place3"><span class="checkboxtext">movie theatre </span></label><br> <!-- br means break line-->
+            
+            <input type="checkbox" id="place4" name="place4" value="PostOffice">
+            <label for="place4"><span class="checkboxtext"> post office </span></label><br> <!-- br means break line-->
+            
+            <input type="checkbox" id="place5" name="place5" value="restaurant">
+            <label for="place5"><span class="checkboxtext"> restaurant</span></label><br> <!-- br means break line-->
+           
+            <input type="checkbox" id="place6" name="place6" value="hotel">
+            <label for="place6"><span class="checkboxtext"> hotel</span></label><br> <!-- br means break line-->
+            
+            <input type="checkbox" id="place7" name="place7" value="Friends House">
+            <label for="place7"><span class="checkboxtext"> a friend's house</span></label><br> <!-- br means break line-->
+            
+            <input type="checkbox" id="LowActivity0" name="LowActivity0" value="None">
+            <label for="LowActivity0"><span class="checkboxtext"> none of the above</span></label><br> <!-- br means break line--> <!--0 for none of the above-->
+            
+     </form>
+    </div>
+    <div class="Next">
+        <a href=".html"> NEXT -></a>
+    </div>
+</body>
+</html>
