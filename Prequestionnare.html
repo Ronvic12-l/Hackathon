@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en"> 
     <head>
+        <meta charset="utf=8">
         <title>Prequestionnare Survey</title>
         
     <style>
         body
         {
-            background-color: aqua;
+            background-color:white;
         }
         div.p1
         {
-            height: 144px;
-            width: 676px;
-            left: 8px;
-            top: 5px;
-            
-
+            background-color: lightblue;
+            border-top-style: outset;
+;
         }
         div.a
         {
@@ -33,15 +31,59 @@
         }
         img
         {
-            position: absolute;
-            width: 286px;
-            height: 353px;
-            left: 163px;
-            top: 171px;
-
+            display: block;
+            margin-left:auto;
+            margin-right:auto;
+            width:50%;
             text-align:center;
+            
         }
+        div.bodyimage
+        {
+            background-color: lightblue;
+            border: solid;
+            border-width: 2 px;
+        }
+        div.Instruction
+        {
+            background-color: lightblue;
+            font-size: 12 px;
+            border-style:solid;
+            border-width: 2 px;
+        }
+        label{
+            display:inline-block;
+            width:200 px;
+        }
+        label input
+        {
+            float: left;
+        }
+        label span
+        {
+            display: block;
+            overflow: auto;
+        }
+        div.AfterSen
+        {
+            background-color: lightblue;
+            border-width: 200px;
+            font-size: 150%;
+        }
+        div.Nextbutton
+        {
+            border-bottom-style: outset;
+            text-align:center;
+            position: relative;
+            width: 300px;
+            height: 110px;
+            left: 750px;
+            top: - 10px;
+            border-radius: 50%;
+            background-color: green;
+           font-size: 380%;
 
+        }
     </style>
     </head>
     <body>
@@ -57,8 +99,26 @@
             
     </div>
 
-    <div class="img">
+    <div class="bodyimage">
         <img src="https://pbs.twimg.com/media/EcAWAy1XkAM3Mma?format=jpg&name=medium">
     </div>
+
+    <div class="Instruction">
+            <h4>Instruction</h4>
+            <p>Click on the survey box about your daily activities. The activity ranges from 1 to 9. 1 is  the lowest risk activity and 9 is the highest risk activity.</p>
+            <p>Please  answer these survey  questions honestly.</p>
+            <label>
+                <input type="checkbox">
+                <span>Please check this box if you have read the terms and conditions of this survey.</span>
+            </label>
+            
+    </div>
+<div class="AfterSen">
+
+    <p>After you check the check box, click Next to continue to do the survey</p>
+
+<div class="Nextbutton">
+   <a href="LowRisk.html">Next</a>
+</div>
     </body>
 </html>
